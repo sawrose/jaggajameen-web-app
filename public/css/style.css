@@ -1,0 +1,769 @@
+/*Global CSS*/
+/*login page section starts*/
+html {
+    height: 100%;
+}
+
+@font-face {
+    font-family: Adlery;
+    src: url(/font/Adlery.ttf);
+}
+
+.textBold {
+    font-weight: bold;
+}
+
+/*Login Page*/
+.login {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    margin-top: 8em;
+    text-align: center;
+}
+
+.logo {
+    font-family: Adlery;
+    font-size: 65px;
+    background: -webkit-linear-gradient(99deg, rgba(115, 18, 81, 1) 10.6%, rgba(28, 28, 28, 1) 118%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 16px;
+    padding-right: 16px;
+
+}
+
+.logo:hover {
+    background: -webkit-linear-gradient(99deg, rgb(201, 13, 135) 10.6%, rgba(28, 28, 28, 1) 118%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.lgnForm {
+    border: 1px solid grey;
+    padding: 2em;
+    background-color: rgba(128, 128, 128, 0.377);
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 0 10px #121213;
+}
+
+.txt_field {
+    margin-top: 3em;
+}
+
+.inputWidth {
+    width: 20em;
+    height: 2em;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(107, 3, 71, 0.877);
+}
+
+.remme {
+    position: absolute;
+    left: 32%;
+}
+
+.lgnBtn {
+    color: white;
+    margin-top: 2em;
+    margin-bottom: 3em;
+    width: 50%;
+    padding: 7px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgba(115, 18, 81, 1);
+
+    border: none;
+}
+
+.lgnBtn:hover {
+    background-image: linear-gradient(99deg, rgba(28, 28, 28, 1) 10.6%, rgba(115, 18, 81, 1) 118%);
+}
+
+.copyright {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*Login page end*/
+
+/*Animation Dhukdhuk*/
+.circle {
+    margin: auto;
+    animation: ripple 0.5s infinite;
+
+}
+
+.xxlarge {
+    width: 380px;
+    height: 415px;
+}
+
+.shade1 {
+    opacity: 1;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.99);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*Animation Dhukdhuk end*/
+
+/*Background animation*/
+.bg {
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(122.3deg, rgba(170, 150, 192, 0.486) 14.6%, rgba(201, 204, 201, 0.582) 29.6%, rgb(143, 143, 140) 42.1%, rgb(146, 139, 146) 56.7%, rgb(105, 128, 133) 68.7%, rgb(107, 91, 91) 84.8%);
+    bottom: 0;
+    left: -50%;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+
+.bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 5s;
+}
+
+.bg3 {
+    animation-duration: 10s;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(25%);
+    }
+}
+
+/*Background animation end*/
+/*login page section end*/
+
+/*Dashboard section starts*/
+
+#dbBody {
+    margin: 0px;
+    padding: 0px;
+    background-image: linear-gradient(109.6deg, rgba(223, 234, 247, 1) 11.2%, rgba(244, 248, 252, 1) 91.1%);
+}
+.optableTR th{
+    text-align: center !important;
+}
+.regOperatorBtn{
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    float: right;
+    color: white;
+    border: none;
+    background-image: linear-gradient(79.2deg, rgba(232, 12, 88, 1) 108.6%, rgba(187, 187, 187, 1) 109.5%);
+}
+.regOperatorBtn:hover{
+    background-image: linear-gradient(109.6deg, rgba(20, 30, 48, 1) 11.2%, rgba(36, 59, 85, 1) 91.1%);
+}
+.actionBtns{
+    text-align: center;
+}
+.updateBtn{
+    display: block;
+    width: 80px;
+    border-radius: 5px;
+    border: none;
+    padding: 2px 5px;
+    color: white;
+    background-image: linear-gradient(109.6deg, rgba(20, 30, 48, 1) 11.2%, rgba(36, 59, 85, 1) 91.1%);
+    
+}
+.updateBtn:hover{
+    background-image: linear-gradient(79.2deg, rgba(232, 12, 88, 1) 108.6%, rgba(187, 187, 187, 1) 109.5%);
+    
+}
+.delBtn{
+    margin-top: 2px;
+    display: block;
+    width: 80px;
+    border-radius: 5px;
+    border: none;
+    padding: 2px 5px;
+    color: white;
+    background-image: linear-gradient(109.6deg, rgba(20, 30, 48, 1) 11.2%, rgba(36, 59, 85, 1) 91.1%);
+    
+}
+.delBtn:hover{
+    background-image: linear-gradient(79.2deg, rgba(232, 12, 88, 1) 108.6%, rgba(187, 187, 187, 1) 109.5%);
+}
+
+
+
+/* Style the tab */
+
+.tab {
+    position: fixed;
+    left: 0;
+    float: left;
+    background-image: linear-gradient(79.2deg, rgba(232, 12, 88, 1) 108.6%, rgba(187, 187, 187, 1) 109.5%);
+    width: 190px;
+    height: 100vh;
+    transition: 0.6s;
+    overflow: hidden;
+    padding-left: 4px;
+    padding-right: 4px;
+
+}
+
+.tabText {
+    font-weight: bold;
+}
+
+/* Style the buttons inside the tab */
+
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: white;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 17px;
+    margin-bottom: 5px;
+    text-align: center;
+
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: rgba(36, 59, 85, 0.4);
+    border-radius: 90px;
+
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-image: linear-gradient(109.6deg, rgba(20, 30, 48, 1) 11.2%, rgba(36, 59, 85, 1) 91.1%);
+    border-color: none;
+    border-radius: 90px;
+}
+
+/* Style the tab content */
+.tabcontent {
+    padding-left: 12em;
+    width: auto;
+    border-left: none;
+    height: 300px;
+}
+
+/*logo part*/
+.dLogo {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Adlery';
+    padding-top: 1em;
+    margin-bottom: 2em;
+
+
+}
+
+.whiteJagga,
+.whiteJ {
+    color: rgb(255, 255, 255);
+}
+
+.blackJagga,
+.redJ {
+    color: rgba(20, 30, 48, 1);
+}
+
+.miniLogo {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+    padding-top: 1em;
+    margin-bottom: 2em;
+    display: none;
+}
+
+.tablinks {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*Dashboard*/
+#Dashboard {
+    padding-top: 4em;
+}
+
+.dashHead {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 7px 0 7px 7px;
+    background-image: linear-gradient(109.6deg, rgba(20, 30, 48, 0.98) 11.2%, rgba(36, 59, 85, 0.98) 91.1%);
+}
+
+.dashText {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.upperDashRow {
+    margin: 0 auto !important;
+    width: 98%;
+    font-weight: bold;
+    padding-right: 1px;
+    background-color: whitesmoke;
+    border-radius: 10px 10px 0 0;
+    color: rgba(20, 30, 48, 1);
+    box-shadow: 0 0 10px #12121333;
+}
+
+.upperDashBox {
+    height: 150px;
+    padding: 45px;
+}
+
+.upperLeft {
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    width: 150px;
+    height: 70px;
+    padding-left: 5px;
+    border-left: 4px solid rgba(20, 30, 48, 1);
+    border-right: 4px solid rgba(20, 30, 48, 1);
+    cursor: pointer;
+}
+
+.upperLeft:hover {
+    border-right: 4px solid rgba(232, 12, 88, 1);
+    border-left: 4px solid rgba(232, 12, 88, 1);
+}
+
+.dashBoxTxt1 {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+.dashBoxTxt2 {
+    padding: 0;
+    margin: 0;
+    font-weight: bold !important;
+    font-size: 30px !important;
+    color: rgba(232, 12, 88, 1);
+}
+
+.dashBoxRow {
+    text-align: center;
+    width: 85%;
+    margin: 0 auto !important;
+    padding-right: 1px;
+}
+
+.dashBox {
+    color: white;
+    height: 7em;
+    border: 1px solid green;
+    max-width: 250px !important;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(109.6deg, rgba(20, 30, 48, 1) 11.2%, rgba(36, 59, 85, 1) 91.1%);
+}
+
+/*Polar Chart*/
+.statsChart {
+    margin: 0 auto !important;
+    width: 98%;
+    background-color: rgba(0, 0, 0, 0.041);
+    box-shadow: 0 0 10px #1212134f;
+    border-top: 1px solid rgba(128, 128, 128, 0.322);
+    margin-bottom: 2em !important;
+}
+
+.chartDiv {
+    padding: 20px 15px;
+}
+
+.chartDiv1 {
+    border-right: 2px solid rgba(232, 12, 88, 1);
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .tabText {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .tab {
+        width: 78px;
+    }
+
+    .tabcontent {
+        padding-left: 5em;
+        transition: 1s;
+    }
+
+    .tablinks {
+        text-align: center !important;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .tabcontent {
+        transition: 0.6s;
+    }
+
+    .dLogo {
+        transform: none;
+        transition: 1px;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    .dashBoxRow {
+        max-width: 350px;
+    }
+
+    .dashBox2 {
+        margin-top: 1em;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .dashBoxRow {
+        width: 650px;
+    }
+
+    .dashBox {
+        min-width: 300px !important;
+    }
+
+    .dashBox3,
+    .dashBox4 {
+        margin-top: 1em;
+    }
+}
+
+#itemTableTBody img{
+    border-radius: 5px;
+}
+
+
+#opTableTBody , #itemTableTBody , #enquiryTableTBody{
+    text-align: center;
+}
+
+/* The Modal (background) */
+
+#imageViewImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #imageViewImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  /* Add Animation */
+  .modal-content{  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+#addOperatorModal{
+    display: none;
+}
+#addItemData, #addOperatorForm, #modifyOperatorForm{
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+.saveBtn{
+    margin-top: 10px;
+}
+
+/*Delete Warning Modal*/
+/* Float cancel and delete buttons and add an equal width */
+.cancelOperatorDelBtn, .yesDeleteOperatorBtn, .yesDeleteItemBtn {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Add a color to the cancel button */
+  .cancelOperatorDelBtn {
+    background-color: #ccc;
+    color: black;
+  }
+  
+  /* Add a color to the delete button */
+  .yesDeleteOperatorBtn, .yesDeleteItemBtn {
+    background-color: #f44336;
+  }
+  
+  /* Add padding and center-align text to the container */
+  .warningDelContainer {
+    padding: 16px;
+    text-align: center;
+  }
+  
+  /* The Modal (background) */
+  .warningmodal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-warning-content {
+    border-radius: 10px;
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 350px; /* Could be more or less, depending on screen size */
+  }
+  
+  /* Style the horizontal ruler */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  
+  /* Clear floats */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Change styles for cancel button and delete button on extra small screens */
+  @media screen and (max-width: 300px) {
+    .cancelbtn, .deletebtn {
+       width: 100%;
+    }
+  }
+  
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+  }
+  
+  /* The popup form - hidden by default */
+  .form-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    max-width: 500px;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0 5px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+
+/*Dashboard section ends*/
+
+/*Operators section starts*/
+#Operators, #Services {
+    padding-top: 4em;
+}
+#Enquiry, #Operators{
+    padding-top: 6.5em;
+}
+.titleDiv{
+    display: inline;
+}
+#LogOutBtn {
+    color: white;
+    display: inline;
+    position: fixed;
+    right: 70px;
+    margin-right: 20px;    
+}
+.logoutBtn{
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    background: none;
+    border: none;
+}
+.logoutBtn:hover{
+    text-decoration: none;
+    color: rgba(232, 12, 88, 1);
+}
+.userName{
+    border: none;
+    color: white;
+    background: none;
+    margin-bottom: 3px;
+}
+.logoutform{
+    position: fixed;
+    top: 6.5px;
+    right: 10px;
+}
